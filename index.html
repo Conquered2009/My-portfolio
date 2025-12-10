@@ -287,7 +287,7 @@
                     <div
                         class="relative w-full max-w-md bg-brand-green rounded-[2.5rem] pt-8 px-0 pb-0 overflow-hidden shadow-2xl">
                         <!-- REPLACE WITH YOUR IMAGE URL -->
-                        <img src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        <img src="./ims/profile .jpg" class=""
                             alt="Conquered Ngbede"
                             class="w-full h-full object-cover object-center transform translate-y-2 scale-105">
                     </div>
@@ -401,6 +401,83 @@
                 </div>
             </div>
         </section>
+
+        <!-- CONTACT SECTION -->
+<section id="contact" class="py-20 px-4 md:px-8">
+    
+    <!-- Section Title -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-10">Get In Touch</h2>
+
+    <!-- The Main Card -->
+    <div class="max-w-5xl mx-auto bg-[#f3f4f6] rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[500px]">
+        
+        <!-- LEFT SIDE: Image & Text -->
+        <div class="relative w-full md:w-5/12 bg-brand-dark p-10 flex flex-col justify-center">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Contact Background" class="w-full h-full object-cover opacity-20">
+                <!-- Gradient Overlay to ensure text readability -->
+                <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/80 to-brand-dark/90"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative z-10">
+                <h3 class="text-3xl md:text-4xl font-bold text-white leading-tight">
+                    Let’s discuss <br>
+                    on something <span class="text-brand-green">cool</span> <br>
+                    together
+                </h3>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: The Form -->
+        <div class="w-full md:w-7/12 p-8 md:p-12 bg-[#f3f4f6]">
+            <form action="#" class="space-y-8">
+                
+                <!-- Interest Buttons -->
+                <div>
+                    <p class="text-sm font-semibold text-gray-700 mb-4">I'm interested in...</p>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- Active Option (Frontend) -->
+                        <button type="button" class="px-6 py-2 rounded-md bg-brand-green text-brand-dark font-semibold text-sm shadow-md transition-transform hover:-translate-y-1">
+                            Frontend
+                        </button>
+                        <!-- Inactive Option -->
+                        <button type="button" class="px-6 py-2 rounded-md border border-green-300 text-gray-500 font-medium text-sm hover:border-gray-400 hover:text-gray-700 transition-colors">
+                            GIS
+                        </button>
+                        <!-- Inactive Option -->
+                        <button type="button" class="px-6 py-2 rounded-md border border-gray-300 text-gray-500 font-medium text-sm hover:border-gray-400 hover:text-gray-700 transition-colors">
+                            Other
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Input Fields (Underlined Style) -->
+                <div class="space-y-6">
+                    <!-- Name -->
+                    <div class="relative">
+                        <input type="text" id="name" placeholder="Your name" class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="relative">
+                        <input type="email" id="email" placeholder="Your email" class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="relative">
+                        <textarea id="message" rows="1" placeholder="Your message" class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm resize-none"></textarea>
+                    </div>
+                </div>
+
+                <!-- Send Button -->
+                <div class="pt-2">
+                    <button type="submit" class="bg-brand-green text-brand-dark font-bold py-3 px-8 rounded-lg shadow-lg hover:opacity-90 transition-opacity">
+                        Send Message
+        
+                    </button>
+                </div>
 
         <footer class="text-center py-8 border-t" style="border-color: var(--border-color);">
             <p>&copy; 2025 NK Portfolio. All rights reserved.</p>
