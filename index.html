@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NK Portfolio</title>
+    <title>CN Portfolio</title>
 
     <!-- 1. Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -231,8 +231,12 @@
                 <div class="px-4 pt-2 pb-6 space-y-4 flex flex-col items-center">
                     <a href="#about" class="block w-full text-center font-bold px-4 py-3 rounded-md"
                         style="background-color: var(--accent-color); color: var(--bg-color);">About</a>
+
                     <a href="#projects" class="block w-full text-center font-bold px-4 py-3 rounded-md"
                         style="background-color: var(--accent-color); color: var(--bg-color);">Projects</a>
+                    <a href="#projects" class="block w-full text-center font-bold px-4 py-3 rounded-md"
+                        style="background-color: var(--accent-color); color: var(--bg-color);">Skills</a>
+
                     <a href="#contact" class="block w-full text-center border font-medium px-4 py-3 rounded-md"
                         style="border-color: var(--text-muted); color: var(--text-color);">Contact</a>
                 </div>
@@ -287,8 +291,7 @@
                     <div
                         class="relative w-full max-w-md bg-brand-green rounded-[2.5rem] pt-8 px-0 pb-0 overflow-hidden shadow-2xl">
                         <!-- REPLACE WITH YOUR IMAGE URL -->
-                        <img src="./ims/profile .jpg" class=""
-                            alt="Conquered Ngbede"
+                        <img src="./ims/profile .jpg" class="" alt="Conquered Ngbede"
                             class="w-full h-full object-cover object-center transform translate-y-2 scale-105">
                     </div>
                 </div>
@@ -388,7 +391,7 @@
                         <!-- QGIS (Using generic GIS icon if QGIS specific is missing, or SVG) -->
                         <div class="flex flex-col items-center gap-2 group">
                             <!-- QGIS isn't always in CDN, using a text fallback or generic globe icon -->
-                          
+
                         </div>
                     </div>
 
@@ -402,87 +405,222 @@
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
-<section id="contact" class="py-20 px-4 md:px-8">
-    
-    <!-- Section Title -->
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-10">Get In Touch</h2>
 
-    <!-- The Main Card -->
-    <div class="max-w-5xl mx-auto bg-[#f3f4f6] rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[500px]">
-        
-        <!-- LEFT SIDE: Image & Text -->
-        <div class="relative w-full md:w-5/12 bg-brand-dark p-10 flex flex-col justify-center">
-            <!-- Background Image with Overlay -->
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Contact Background" class="w-full h-full object-cover opacity-20">
-                <!-- Gradient Overlay to ensure text readability -->
-                <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/80 to-brand-dark/90"></div>
-            </div>
 
-            <!-- Content -->
-            <div class="relative z-10">
-                <h3 class="text-3xl md:text-4xl font-bold text-white leading-tight">
-                    Let’s discuss <br>
-                    on something <span class="text-brand-green">cool</span> <br>
-                    together
-                </h3>
-            </div>
-        </div>
+        <body class="bg-slate-900">
 
-        <!-- RIGHT SIDE: The Form -->
-        <div class="w-full md:w-7/12 p-8 md:p-12 bg-[#f3f4f6]">
-            <form action="#" class="space-y-8">
+    <!-- Projects Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-[#0f172a] min-h-screen">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-semibold text-white mb-8">Projects</h2>
                 
-                <!-- Interest Buttons -->
-                <div>
-                    <p class="text-sm font-semibold text-gray-700 mb-4">I'm interested in...</p>
-                    <div class="flex flex-wrap gap-3">
-                        <!-- Active Option (Frontend) -->
-                        <button type="button" class="px-6 py-2 rounded-md bg-brand-green text-brand-dark font-semibold text-sm shadow-md transition-transform hover:-translate-y-1">
-                            Frontend
-                        </button>
-                        <!-- Inactive Option -->
-                        <button type="button" class="px-6 py-2 rounded-md border border-green-300 text-gray-500 font-medium text-sm hover:border-gray-400 hover:text-gray-700 transition-colors">
-                            GIS
-                        </button>
-                        <!-- Inactive Option -->
-                        <button type="button" class="px-6 py-2 rounded-md border border-gray-300 text-gray-500 font-medium text-sm hover:border-gray-400 hover:text-gray-700 transition-colors">
-                            Other
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Input Fields (Underlined Style) -->
-                <div class="space-y-6">
-                    <!-- Name -->
-                    <div class="relative">
-                        <input type="text" id="name" placeholder="Your name" class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm">
-                    </div>
-
-                    <!-- Email -->
-                    <div class="relative">
-                        <input type="email" id="email" placeholder="Your email" class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm">
-                    </div>
-
-                    <!-- Message -->
-                    <div class="relative">
-                        <textarea id="message" rows="1" placeholder="Your message" class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm resize-none"></textarea>
-                    </div>
-                </div>
-
-                <!-- Send Button -->
-                <div class="pt-2">
-                    <button type="submit" class="bg-brand-green text-brand-dark font-bold py-3 px-8 rounded-lg shadow-lg hover:opacity-90 transition-opacity">
-                        Send Message
-        
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="px-6 py-2 rounded-md bg-emerald-400 text-slate-900 font-semibold transition hover:bg-emerald-300">
+                        All Projects
+                    </button>
+                    <button class="px-6 py-2 rounded-md border border-slate-600 text-slate-300 hover:border-emerald-400 hover:text-emerald-400 transition">
+                        Frontend
+                    </button>
+                    <button class="px-6 py-2 rounded-md border border-slate-600 text-slate-300 hover:border-emerald-400 hover:text-emerald-400 transition">
+                        Geo Informatics
                     </button>
                 </div>
+            </div>
 
-        <footer class="text-center py-8 border-t" style="border-color: var(--border-color);">
-            <p>&copy; 2025 NK Portfolio. All rights reserved.</p>
-        </footer>
-    </div>
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+                <!-- Card 1: Onari B Website -->
+                <div class="bg-[#1e293b] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-transparent hover:border-slate-600 flex flex-col">
+                    <!-- Image Area -->
+                    <div class="h-64 overflow-hidden bg-slate-800 relative group">
+                        <!-- Placeholder for the website screenshot -->
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Onari B Website" 
+                             class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1e293b] to-transparent opacity-60"></div>
+                    </div>
+
+                    <!-- Content Area -->
+                    <div class="p-8 flex flex-col flex-grow items-center text-center">
+                        <h3 class="text-2xl font-bold text-white mb-4">Onari B Website</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="mb-8 w-full">
+                            <p class="text-white font-semibold mb-3 text-sm">Technologies Used</p>
+                            <div class="flex justify-center items-center gap-4">
+                                <!-- React Icon -->
+                                <svg class="w-6 h-6 text-[#61DAFB]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><circle cx="12" cy="12" r="2"/></svg>
+                                <!-- JS Icon -->
+                                <svg class="w-6 h-6 text-[#F7DF1E]" viewBox="0 0 24 24" fill="currentColor"><rect width="24" height="24" rx="4"/><path d="M6 2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4zm7.5 14h2v-5.5h-2V16zm4 0h2.5v-1.5h-2v-1h2v-1.5h-2.5V16z" fill="#000"/></svg>
+                                <!-- Tailwind (Wave) Icon -->
+                                <svg class="w-6 h-6 text-[#38B2AC]" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex gap-4 mt-auto">
+                            <a href="#" class="px-5 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-900 text-sm font-bold rounded shadow-lg transition-colors">
+                                View Live Demo
+                            </a>
+                            <a href="#" class="px-5 py-2 border border-slate-500 hover:border-emerald-400 text-slate-300 hover:text-white text-sm font-medium rounded transition-colors">
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Google Earth Tweet Map -->
+                <div class="bg-[#1e293b] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-transparent hover:border-slate-600 flex flex-col">
+                    <!-- Image Area -->
+                    <div class="h-64 overflow-hidden bg-sky-900 flex items-center justify-center relative group">
+                        <!-- Twitter Logo Representation -->
+                        <svg class="w-32 h-32 text-sky-400 drop-shadow-lg transform transition-transform duration-500 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                        <div class="absolute inset-0 bg-black opacity-20"></div>
+                    </div>
+
+                    <!-- Content Area -->
+                    <div class="p-8 flex flex-col flex-grow items-center text-center">
+                        <h3 class="text-2xl font-bold text-white mb-4">Google Earth Tweet Map</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="mb-8 w-full">
+                            <p class="text-white font-semibold mb-3 text-sm">Technologies Used</p>
+                            <div class="flex justify-center items-center gap-4">
+                                <!-- React Icon -->
+                                <svg class="w-6 h-6 text-[#61DAFB]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><circle cx="12" cy="12" r="2"/></svg>
+                                <!-- JS Icon -->
+                                <svg class="w-6 h-6 text-[#F7DF1E]" viewBox="0 0 24 24" fill="currentColor"><rect width="24" height="24" rx="4"/><path d="M6 2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4zm7.5 14h2v-5.5h-2V16zm4 0h2.5v-1.5h-2v-1h2v-1.5h-2.5V16z" fill="#000"/></svg>
+                                <!-- Tailwind Icon -->
+                                <svg class="w-6 h-6 text-[#38B2AC]" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex gap-4 mt-auto">
+                            <a href="#" class="px-5 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-900 text-sm font-bold rounded shadow-lg transition-colors">
+                                View Live Demo
+                            </a>
+                            <a href="#" class="px-5 py-2 border border-slate-500 hover:border-emerald-400 text-slate-300 hover:text-white text-sm font-medium rounded transition-colors">
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+
+
+
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 px-4 md:px-8">
+
+            <!-- Section Title -->
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-10">Get In Touch</h2>
+
+            <!-- The Main Card -->
+            <div
+                class="max-w-5xl mx-auto bg-[#f3f4f6] rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[500px]">
+
+                <!-- LEFT SIDE: Image & Text -->
+                <div class="relative w-full md:w-5/12 bg-brand-dark p-10 flex flex-col justify-center">
+                    <!-- Background Image with Overlay -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Contact Background" class="w-full h-full object-cover opacity-20">
+                        <!-- Gradient Overlay to ensure text readability -->
+                        <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/80 to-brand-dark/90"></div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="relative z-10">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white leading-tight">
+                            Let’s discuss <br>
+                            on something <span class="text-brand-green">cool</span> <br>
+                            together
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: The Form -->
+                <div class="w-full md:w-7/12 p-8 md:p-12 bg-[#f3f4f6]">
+                    <form action="#" class="space-y-8">
+
+                        <!-- Interest Buttons -->
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-4">I'm interested in...</p>
+                            <div class="flex flex-wrap gap-3">
+                                <!-- Active Option (Frontend) -->
+                                <button type="button"
+                                    class="px-6 py-2 rounded-md bg-brand-green text-brand-dark font-semibold text-sm shadow-md transition-transform hover:-translate-y-1">
+                                    Frontend
+                                </button>
+                                <!-- Inactive Option -->
+                                <button type="button"
+                                    class="px-6 py-2 rounded-md border border-gray-300 text-gray-500 font-medium text-sm hover:border-gray-400 hover:text-gray-700 transition-colors">
+                                    GIS
+                                </button>
+                                <!-- Inactive Option -->
+                                <button type="button"
+                                    class="px-6 py-2 rounded-md border border-gray-300 text-gray-500 font-medium text-sm hover:border-gray-400 hover:text-gray-700 transition-colors">
+                                    Other
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Input Fields (Underlined Style) -->
+                        <div class="space-y-6">
+                            <!-- Name -->
+                            <div class="relative">
+                                <input type="text" id="name" placeholder="Your name"
+                                    class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="relative">
+                                <input type="email" id="email" placeholder="Your email"
+                                    class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm">
+                            </div>
+
+                            <!-- Message -->
+                            <div class="relative">
+                                <textarea id="message" rows="1" placeholder="Your message"
+                                    class="w-full bg-transparent border-b border-gray-400 text-gray-800 py-2 focus:outline-none focus:border-brand-green transition-colors placeholder-gray-500 text-sm resize-none"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Send Button -->
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="bg-brand-green text-brand-dark font-bold py-3 px-8 rounded-lg shadow-lg hover:opacity-90 transition-opacity">
+                                Send Message
+
+                            </button>
+
+                            <footer class="text-center py-8 border-t" style="border-color: var(--border-color);">
+                                <p>&copy; 2025 NK Portfolio. All rights reserved.</p>
+                            </footer>
+                        </div>
 </body>
 
 </html>
